@@ -1,0 +1,133 @@
+    body {
+        font-family: Arial, sans-serif;
+        background-color: #f5f5f5;
+        display: flex;
+        justify-content: center;
+        }
+
+    .content {
+        padding: 15px;
+        width: 65%;
+    }
+
+    h1 {
+        text-align: center;
+        margin-bottom: 1em;
+    }
+
+    .instructions{
+        font-size: 10.5pt;
+    }
+
+    textarea, .output-box {
+        box-sizing: border-box;
+        min-height: 200px;
+        margin-bottom: 20px;
+        font-size: 14px;
+        line-height: 1.5;
+        color: #000;
+        background-color: #fff;
+        border: 1px solid #ddd;
+        border-radius: 4px;
+    }
+
+    .output-box {
+        box-sizing: border-box;
+        margin-bottom: 20px;
+        overflow-y: auto;
+        overflow-x: auto; /* Add horizontal scrollbar when needed */
+        max-width: 100%;
+    }
+
+    .table {
+        table-layout: auto;
+        max-width: 100%;
+        margin-bottom: 1rem;
+        background-color: transparent;
+    }
+
+    .table th, .table td {
+        padding: 1.2rem;
+        vertical-align: top;
+        border-top: 1px solid #eceeef;
+        word-wrap: break-word; 
+
+    }
+
+    .table thead th {
+        vertical-align: bottom;
+        border-bottom: 2px solid #eceeef;
+    }
+
+    .table tbody + tbody {
+        border-top: 2px solid #eceeef;
+    }
+
+    .table-striped tbody tr:nth-of-type(odd) {
+        background-color: rgba(0, 0, 0, .05);
+    }
+
+    .table-hover tbody tr:hover {
+        background-color: rgba(0, 0, 0, .075);
+    }
+
+    .btn {
+        padding: 1rem 2rem;
+        font-size: 1.125rem;
+        line-height: 1.2;
+        border-radius: .3rem;
+        color: #fff;
+        background-color: #a5a5a5; /* Change to Bootstrap primary color */
+        border-color: #878787; /* Change to Bootstrap primary color */
+        display: block;
+        margin: auto;
+        width: 150px;
+        transition: background-color 0.3s ease, transform 0.3s ease; /* Add transition for smooth size change */
+    }
+
+    .btn:hover {
+        background-color: #515151; /* Darken color on hover */
+        border-color: #8fc2f8; /* Darken color on hover */
+        transform: scale(1.05); /* Increase size on hover */
+    }
+
+    .btn-custom {
+        background-color: #a5a5a5; /* Change to Bootstrap primary color */
+        color: #363535;
+        border-radius: 15px;
+        padding: 10px 13px;
+        margin: 0 auto;
+        display: block;
+        transition: background-color 0.3s ease; /* Add transition for smooth color change */
+    }
+
+    .btn-custom:hover {
+        background-color: #515151; /* Darken color on hover */
+    }
+
+    .btn-copy {
+        display: none;
+        order: 2;
+        top: 10px;
+        background: #9fa0a1;
+        background-size: 75%;
+        border: none;
+        color: #5d5a5a;
+        font-size: 1.5em;
+        padding: 0.5em;
+        width: auto;
+    }
+
+    .center-div {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .invisible {
+        display: none;
+    }
+
+    .quality8 {
+        background-color: #fffacc;
+    }

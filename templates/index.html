@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Yami SKU Info Generator English (Test)</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+</head>
+
+<body>
+    <div class="content">
+        <h1>Yami SKU Info Generator English (Test)</h1>
+        <div class="instructions">
+            <p style="font-size: 1em;">Input titles in any language and wait about 30 - 90 seconds to generate English info. Enter the same title again to make improvements. Titles with low quality scores are highlighted yellow.</p>
+            <p style="font-size: 1em;"><i>Example: 黑芝麻酥糖 136g【传统芝麻脆糖果】【海南特产】春光 特制椰子糖 硬糖果 120g【甜而不腻】Special coconut candy 4.23oz</i></p>
+        </div>
+        <div class="generator">
+            <textarea id="input1" class="form-control input-text" rows="5" placeholder="Input to generate English product titles." aria-label="Input field"></textarea>
+            <div class="d-flex justify-content-center">
+                <button class="btn btn-custom my-2" id="generate1" onclick="generate(1)" aria-label="Generate">Generate</button>
+                <button class="btn btn-copy my-2" id="copy1" onclick="copyToClipboard(1)" aria-label="Copy to clipboard"><i class="fas fa-copy"></i></button>                
+            </div>
+            <div id="output1" class="output-box border bg-white p-3 invisible" aria-label="Output field"></div>
+        </div>
+        <div class="generator2">
+            <textarea id="input2" class="form-control" rows="5" placeholder="Input to generate English product descriptions." aria-label="Input field"></textarea>
+            <div class="d-flex justify-content-center">
+                <button class="btn btn-custom my-2" id="generate2" onclick="generate(2)" aria-label="Generate Description">Generate</button>
+                <button class="btn btn-copy my-2" id="copy2" onclick="copyToClipboard(2)" aria-label="Copy to clipboard"><i class="fas fa-save"></i></button>                
+            </div>
+            <div id="output2" class="output-box border bg-white p-3 invisible" aria-label="Output field"></div>
+        </div>
+    </div>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://unpkg.com/@popperjs/core@2/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    <script src="/static/js/main.js"></script>
+    <link rel="stylesheet" type="text/css" href="/static/css/main.css">
+</body>
+</html>
