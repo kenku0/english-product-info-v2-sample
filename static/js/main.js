@@ -85,7 +85,7 @@ async function generate(inputId) {
         console.error('An error occurred:', error);
         generateButton.textContent = "Generate";
         generateButton.disabled = false;
-        alert('Error: ' + response.statusText);
+        alert('Error: ' + error.message);
     }  
     
     // Revert button state
