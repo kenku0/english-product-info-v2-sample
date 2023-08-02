@@ -3,7 +3,7 @@ import json
 import openai
 
 app = Flask(__name__)
-openai.api_key = "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"
+openai.api_key = "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"
 
 system_messages = {
     '1': ("GPT Role: As an SEO Expert with industry-leading skills in marketing and translation, "
