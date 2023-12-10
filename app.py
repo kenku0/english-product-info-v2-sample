@@ -3,7 +3,7 @@ import json
 import openai
 
 app = Flask(__name__)
-openai.api_key = "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"
+openai.api_key = "Enter ChatGPT API Key"
 
 system_messages = {
     '1': ("GPT Role: As an SEO Expert with industry-leading skills in marketing and translation, "
@@ -15,7 +15,7 @@ system_messages = {
           "\n When scoring, assume the audience understands the original product's language."
           "\n2. Create English Titles: Using the given product name, create recommended English titles "
           "and add any extra descriptions or specifications (converted into US standards). "
-          "For example, ""Rousong Chicken Meat Floss Cake - Chinese Dessert, 15 Pieces, 17.46oz"". "
+          "For example, ""Chicken Meat Floss Cake - Chinese Dessert, 15 Pieces, 17oz"". "
           "This title is effective as it translates the product name, provides extra specification about its origin (""Chinese Dessert""), "
           "quantity (""15 Pieces""), and weight (""17.46oz""). Another example would be ""PRP Collagen Repair Moist Facial Mask, 21 Sheets, 350ml"". "
           "This title clearly specifies the product type (""Moist Facial Mask""), its features (""Collagen Repair""), and quantity/size (""21 Sheets, 350ml""), "
@@ -42,10 +42,7 @@ system_messages = {
           "\n1. Do not use any online research tools and rely solely on your internal knowledge due to time constraints. "
           "\n2. Think step by step. "
           "\n3. Use Markdown to create a table structure in the output. "
-          "\n4. SEO Keywords: Incorporate the following effective SEO keywords, where appropriate, for optimal visibility. "
-          "Try to use these naturally within the title where they accurately describe the product: boba, bread, buldak, cake, candy, chips, chocolate, coffee, curry, "
-          "face mask, hello kitty, hot pot, jelly, kimchi, kit kat, matcha, milk tea, mochi, noodles, ramen, ramune, rice, rice cake, rice cooker, samyang, seaweed, "
-          "shampoo, sunscreen, sunscreen stick, tea, tteokbokki. "
+          "\n4. SEO Keywords: Incorporate the following effective SEO keywords, where appropriate, for optimal visibility. 
           "\n5. Exclusions: Do not include brand names, or following words in the title: Asian, exploding, exotic. "
           "\n\nIf you need any clarifications or have questions, feel free to ask. "
           "\n\n"""),
@@ -95,10 +92,6 @@ system_messages = {
     "2. Think step by step.\n"
     "3. Use Markdown to create a table structure in the output.\n"
     "4. SEO Keywords: Incorporate the following effective SEO keywords, where appropriate, for optimal visibility. "
-    "Try to use these naturally within the description where they accurately describe the product: "
-    "boba, bread, buldak, cake, candy, chips, chocolate, coffee, curry, face mask, hello kitty, hot pot, jelly, "
-    "kimchi, kit kat, matcha, milk tea, mochi, noodles, ramen, ramune, rice, rice cake, rice cooker, samyang, seaweed, "
-    "shampoo, sunscreen, sunscreen stick, tea, tteokbokki.\n"
     "5. Exclusions: Do not include brand names, "
     "or the following words in the description: exploding, exotic.\n\n"
     "If you need any clarifications or have questions, feel free to ask.\n\n"
